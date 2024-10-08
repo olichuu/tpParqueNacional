@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #a9cf9f;
     color: #000;
@@ -14,60 +13,98 @@ body {
 
 /* parte de arriba */
 
-.Gorro {
-    width: 45px;
-    height: auto;
-}
-
-.navbar {
+#contMenu {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(101, 126, 93);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #7a9e71;
-    padding: 15px;
-    flex-wrap: wrap; 
+    padding: 0; 
 }
 
-.botones {
+
+#contLogo {
+    padding: 0px 0px 0px 10px;
+    margin: 0; 
+    width: 70px;
+    height: 75px;
+}
+
+#logo{
+    height: 100%;
+    width: 100%;
+}
+
+
+#contMenu nav {
+    flex-grow: 1;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px; 
+    justify-content: center; 
 }
 
-.botones button {
-    background-color: #95b98c;
-    color: white;
-    border: none;
+#contMenu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#contMenu nav ul li {
+    position: relative;
+    font-size: 25px;
+}
+
+#contMenu nav ul li a {
+    display: block;
     padding: 10px 20px;
-    margin-left: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.botones button:hover {
-    background-color: #63815b;
-}
-
-header {
-    background-color: #5e7558;
-    padding: 20px;
-    text-align: center;
-}
-
-
-header span {
-    font-weight: bold;
-}
-
-header nav a {
-    margin: 0 15px;
-    color: #fff;
+    color: white;
     text-decoration: none;
+
+}
+
+#contMenu nav ul li:hover > a {
+    text-decoration: underline;
+}
+
+#contMenu nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: rgb(101, 126, 93);
+    padding: 0;
+    list-style: none;
+    width: 150px;
+}
+
+#contMenu nav ul ul li {
+    display: block;
+    font-size: 20px;
+}
+
+#contMenu nav ul ul li a {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+#contMenu nav ul li:hover ul {
+    display: block;
 }
 
 /* contenido principal */
+
+#grid-container{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: 
+        'imagen titulo'
+        'imagen info';
+
+    height: 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 25px;
+}
 
 .Margen {
     margin: 20px 10px 20px 10px; 
@@ -80,7 +117,8 @@ header nav a {
     font-size: 24px; 
     color: #000; 
     text-align: left; 
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
+    grid-area: titulo;
 }
 
 /*contenedor del texto*/
@@ -101,13 +139,21 @@ header nav a {
 .info {
     padding-left: 20px;
     margin-bottom: 17px;
+    grid-area: info;
 }
 
-  
+.contImg {
+    grid-column: 1; 
+    max-width: 100%; 
+    margin: 0;
+    grid-area: imagen;
+}
+
 .imagen {
     grid-column: 1; 
     max-width: 100%; 
     margin: 0;
+    grid-area: imagen;
 }
 
 .texto {

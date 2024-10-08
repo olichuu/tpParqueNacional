@@ -1,27 +1,55 @@
 <html lang="en"></html>
+<link rel="stylesheet" href="..css/actTuristicas">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <div class="navbar">
-        <h1 class="Titulo">Parque<img src="images/logop.webp" alt="icono gorro de chef" class="Gorro"> </h1>
-        <div class="botones">
-            <button onclick="window.location.href=''">Inicio</button>
-            <button>Secciones</button>
-            <button>Contactos</button>
-            <button>Ingresar</button>
-        </div>
-    </div>
+    <header>
 
+        <div id="contMenu">
+            <div id="contLogo">
+                <img id="logo" src="assets/imagenes/iconos/logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Secciones</a>
+                        <ul>
+                            <li><a href="paginas/faunaYflora.html">Fauna y Flora</a></li>
+                            <li><a href="paginas/actTuristicas.html">Act. Turísticas</a></li>
+                            <li><a href="#contUbi">Ubicación</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contactos</a></li>
+                    <li><a href="">Ingresar</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="contImgPrinc">
+            <img id="imgPrinc" src="assets/imagenes/imgPrinc.png" alt="">
+            <div id="contLogo2">
+                <img id="logo2" src="assets/imagenes/iconos/logo2.png" alt="">
+            </div>
+            <div id="contTitulo1">
+                <h1 id="titulo1">Parque Nacional Lago Puelo</h1>
+            </div>
+            <div id="contTitulo2">
+                <h2 id="titulo2">Provincia Del Chubut</h2>
+            </div>
+        </div>
+    </header>
         
     <div class="Margen">
             
         <div class="container">
             <h1 class="titulo">Senderismo y Trekking</h1>
-            <img src="images/senderismo.jpg" alt="Imagen no disponible" class="imagen">
+            <div class="contImg">
+                <img src="images/senderismo.jpg" alt="Imagen no disponible" class="imagen">
+            </div>
+
             <div class="info">
             <p>Existen rutas para todos los niveles: desde circuitos principiantes, que requieren escasa preparación física, hasta aquellos expertos que atraviesan rutas sinuosas con distintos grados de dificultad.
                 Los senderos de media y alta dificultad requieren que los visitantes se informen previamente en el puesto de control localizado en la portada de ingreso al Parque Nacional.</p>
@@ -35,7 +63,9 @@
             
         <div class="container">
             <h1 class="titulo">Kayak</h1>
-            <img src="images/kayak.JPG" alt="Imagen no disponible" class="imagen">
+            <div class="contImg">
+                <img src="images/kayak.JPG" alt="Imagen no disponible" class="imagen">
+            </div>
             <div class="info">  
             <p>Si buscás pasar un hermoso día con amistades o pareja, las travesías en kayak son una alternativa perfecta. Como el parque no cuenta con alquiler de kayaks, quienes quieran llevar el suyo deben registrarse previamente -sin excepción- en el destacamento de Prefectura Nacional ubicado en el puerto.</p>
             </div>
@@ -45,23 +75,23 @@
             
         <div class="container">
             <h1 class="titulo">Pesca deportiva</h1>
-            <img src="images/pesca deportiva.jpeg" alt="Imagen no disponible" class="imagen">
+            <div class="contImg">
+                <img src="images/pesca deportiva.jpeg" alt="Imagen no disponible" class="imagen">
+            </div>
             <div class="info">  
-
-
-            <p>Del 1° de noviembre al 1° de mayo inclusive de cada año los lagos y ríos de la zona están habilitados para recibir a quienes gozan de esta actividad concienciada con el medio ambiente.
+                <p>Del 1° de noviembre al 1° de mayo inclusive de cada año los lagos y ríos de la zona están habilitados para recibir a quienes gozan de esta actividad concienciada con el medio ambiente.
                 En el Parque Nacional Lago Puelo la pesca está reglamentada.</p>
-        </div>
+             </div>
     </div>
 
     <div class="Margen">
             
         <div class="container">
             <h1 class="titulo">Cabalgatas</h1>
-            <img src="images/cabalgatas.jpg" alt="Imagen no disponible" class="imagen">
+            <div class="contImg">
+                <img src="images/cabalgatas.jpg" alt="Imagen no disponible" class="imagen">
+            </div>
             <div class="info">  
-
-
             <p>La manera ideal para descubrir los senderos cordilleranos entre bosques nativos de ciprés y coihue, vadeando ríos y arroyos y recorriendo la costa del lago color turquesa.</p>
         </div>
     </div>
@@ -69,15 +99,15 @@
     <div class="Margen">
         <div class="container">
             <h1 class="titulo">Playas</h1>
-            <img src="images/playa.jpg" alt="Imagen no disponible" class="imagen">
+            <div class="contImg">
+                <img src="images/playa.jpg" alt="Imagen no disponible" class="imagen">
+            </div>
             <div class="info">  
 
             <p>De acceso gratuito, La Playita es el único espacio habilitado para actividades balnearias.
                 Está en la cabecera norte del Lago Puelo y es una de las pocas playas arenosas de la región. Cuenta con guardavidas.</p>
         </div>
     </div>
-
-
 
 </body>
 </html>
