@@ -18,6 +18,18 @@ body{
     padding: 0; 
 }
 
+#contLogo {
+    padding: 0px 0px 0px 10px;
+    margin: 0; 
+    width: 70px;
+    height: 75px;
+}
+
+#logo{
+    height: 100%;
+    width: 100%;
+}
+
 
 #contMenu nav {
     flex-grow: 1;
