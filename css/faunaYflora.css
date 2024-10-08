@@ -122,8 +122,15 @@ body{
     height: 500px;
     justify-content: center;
     align-items: center;
+    background-color: rgb(74, 90, 69);
 
+
+    transition: width 0s, height 0s;
 }
+    
+
+
+
 
 .fauna1{
     display: flex;
@@ -131,15 +138,26 @@ body{
     height: 500px;
     justify-content: center;
     align-items: center;
+    background-color: rgb(74, 90, 69);
 
+
+    transition: width 0s, height 0s;
 }
+
+
 
 #foto1{
     width: 50%;
     height: 90%;
     padding-left: 1%;
     grid-area: foto1;
+    
 
+}
+
+#foto1:hover{
+    background-color: rgb(119, 164, 140);
+    display: none;
 }
 
 #foto2{
@@ -149,11 +167,21 @@ body{
     grid-area: foto2;
 }
 
+#foto2:hover{
+    background-color: rgb(119, 164, 140);
+    display: none;
+}
+
 #foto3{
     width: 50%;
     height: 90%;
     padding-left: 1%;
     grid-area: foto3;
+}
+
+#foto3:hover{
+    background-color: rgb(119, 164, 140);
+    display: none;
 }
 
 #foto4{
@@ -162,3 +190,16 @@ body{
     padding-left: 1%;
     grid-area: foto4;
 }
+
+#foto4:hover{
+    background-color: rgb(119, 164, 140);
+    display: none;
+
+}
+
+
+
+
+
+
+
