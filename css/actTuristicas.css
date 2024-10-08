@@ -129,7 +129,7 @@ body{
     grid-row-gap: 25px;
 }
 
-.TituloPag1 {
+#titulo {
     font-size: 24px; 
     color: #000; 
     text-align: left; 
@@ -137,20 +137,20 @@ body{
     grid-area: titulo;
 }
 
-.info {
+#info {
     padding-left: 20px;
     margin-bottom: 17px;
     grid-area: info;
 }
 
-.contImg {
+#contImg {
     grid-column: 1; 
     max-width: 100%; 
     margin: 0;
     grid-area: imagen;
 }
 
-.imagen {
+#imagen {
     grid-column: 1; 
     max-width: 100%; 
     margin: 0;
