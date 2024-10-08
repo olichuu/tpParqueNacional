@@ -12,6 +12,16 @@ body {
 
 
 /* parte de arriba */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: 	rgb(204, 224, 198);
+}
 
 #contMenu {
     width: 100%;
@@ -91,8 +101,22 @@ body {
     display: block;
 }
 
-/* contenido principal */
+/* texto al lado de la imagen */
 
+
+
+/*contenedor del texto*/
+#container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: rgb(74, 90, 69);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 #grid-container{
     display: grid;
     grid-template-columns:1fr 1fr;
@@ -100,18 +124,10 @@ body {
     grid-template-areas: 
         'imagen titulo'
         'imagen info';
-
     height: 200px;
     grid-column-gap: 10px;
     grid-row-gap: 25px;
 }
-
-.Margen {
-    margin: 20px 10px 20px 10px; 
-}
-
-
-/* texto al lado de la imagen */
 
 .TituloPag1 {
     font-size: 24px; 
@@ -120,21 +136,6 @@ body {
     margin-bottom: 5px;
     grid-area: titulo;
 }
-
-/*contenedor del texto*/
-
-.container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 40px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 
 .info {
     padding-left: 20px;
@@ -154,9 +155,4 @@ body {
     max-width: 100%; 
     margin: 0;
     grid-area: imagen;
-}
-
-.texto {
-    grid-column: 2; 
-
 }
