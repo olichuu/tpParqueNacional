@@ -68,6 +68,19 @@ header nav a {
 
 /* contenido principal */
 
+#grid-container{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: 
+        'imagen titulo'
+        'imagen info';
+
+    height: 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 25px;
+}
+
 .Margen {
     margin: 20px 10px 20px 10px; 
 }
@@ -79,7 +92,8 @@ header nav a {
     font-size: 24px; 
     color: #000; 
     text-align: left; 
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
+    grid-area: titulo;
 }
 
 /*contenedor del texto*/
@@ -100,18 +114,21 @@ header nav a {
 .info {
     padding-left: 20px;
     margin-bottom: 17px;
+    grid-area: info;
 }
 
 .contImg {
     grid-column: 1; 
     max-width: 100%; 
     margin: 0;
+    grid-area: imagen;
 }
 
 .imagen {
     grid-column: 1; 
     max-width: 100%; 
     margin: 0;
+    grid-area: imagen;
 }
 
 .texto {
