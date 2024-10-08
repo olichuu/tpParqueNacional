@@ -107,7 +107,7 @@ body{
     width: 170px;
     height: 220px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -124,7 +124,7 @@ body{
     width: 500px;
     height: 220px;
     position: absolute;
-    bottom: -8%;
+    bottom: -10%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -142,7 +142,7 @@ body{
     width: 400px;
     height: 220px;
     position: absolute;
-    bottom: -16%;
+    bottom: -19%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -362,7 +362,7 @@ iframe{
 
 
 footer{
-    background: linear-gradient(to bottom,rgb(177, 170, 221), #452e6a); 
+    background-color: rgb(101, 126, 93);
 }
 
 
