@@ -107,7 +107,7 @@ body{
     width: 170px;
     height: 220px;
     position: absolute;
-    top: 46%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -124,7 +124,7 @@ body{
     width: 500px;
     height: 220px;
     position: absolute;
-    bottom: -8%;
+    bottom: -10%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -142,7 +142,7 @@ body{
     width: 400px;
     height: 220px;
     position: absolute;
-    bottom: -16%;
+    bottom: -19%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -357,4 +357,81 @@ iframe{
     font-size: 20px;
     color: 	rgb(245, 255, 242);
     grid-area: texto3;
+}
+
+
+
+footer{
+    background-color: rgb(101, 126, 93);
+}
+
+
+#contFooter{
+
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    height: 200px;
+}
+
+footer ul {
+    font-size: 17px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex; 
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+#contText {
+    margin-top: auto; 
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#text {
+    font-size: 14px;
+    padding: 10px;
+    color: white;
+}
+
+#contRedes{
+    width: 15%;
+    height: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.redes{
+    padding: 10px ;
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+
+}
+
+.redes:hover {
+    transform: scale(1.1);
 }

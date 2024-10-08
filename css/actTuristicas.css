@@ -12,6 +12,16 @@ body {
 
 
 /* parte de arriba */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: 	rgb(204, 224, 198);
+}
 
 #contMenu {
     width: 100%;
@@ -91,29 +101,58 @@ body {
     display: block;
 }
 
-/* contenido principal */
+/* texto al lado de la imagen */
+
+
+
+/*contenedor del texto*/
 
 #grid-container{
     display: grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-        'imagen titulo'
-        'imagen info';
-
+        'img1 titulo1'
+        'img1 texto1'
+        'img2 titulo2'
+        'img2 texto2'
+        'img3 titulo3'
+        'img3 texto3'
+        'img4 titulo4'
+        'img4 texto4'
+        'img5 titulo5'
+        'img5 texto5';
     height: 200px;
     grid-column-gap: 10px;
     grid-row-gap: 25px;
 }
 
-.Margen {
-    margin: 20px 10px 20px 10px; 
+.contenedores{
+    width: 75%;
+    height: auto;
+    background-color: rgb(74,90,69);
+    display: flex;
+    justify-content: center;
 }
 
 
-/* texto al lado de la imagen */
+#contImg1{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    grid-area: img1;
+}
 
-.TituloPag1 {
+#img1{
+    width: 100%;
+    height: 100%;
+    grid-area: img1;
+}
+
+
+#titulo {
     font-size: 24px; 
     color: #000; 
     text-align: left; 
@@ -121,42 +160,22 @@ body {
     grid-area: titulo;
 }
 
-/*contenedor del texto*/
-
-.container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 40px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-.info {
+#info {
     padding-left: 20px;
     margin-bottom: 17px;
     grid-area: info;
 }
 
-.contImg {
+#contImg {
     grid-column: 1; 
     max-width: 100%; 
     margin: 0;
     grid-area: imagen;
 }
 
-.imagen {
+#imagen {
     grid-column: 1; 
     max-width: 100%; 
     margin: 0;
     grid-area: imagen;
-}
-
-.texto {
-    grid-column: 2; 
-
 }
