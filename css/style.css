@@ -193,6 +193,7 @@ body{
     padding: 0px 15px 0px 15px;
     text-align: justify;
     font-size: 20px;
+    line-height: 200%;
     color: 	rgb(245, 255, 242);
     grid-area: texto1;
 }
