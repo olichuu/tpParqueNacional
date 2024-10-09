@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: 	rgb(204, 224, 198);
+}
+
+#contMenu {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(101, 126, 93);
+    display: flex;
+    align-items: center;
+    padding: 0; 
+}
+
+#contLogo {
+    padding: 0px 0px 0px 10px;
+    margin: 0; 
+    width: 70px;
+    height: 75px;
+}
+
+#logo{
+    height: 100%;
+    width: 100%;
+}
+
+
+#contMenu nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+#contMenu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#contMenu nav ul li {
+    position: relative;
+    font-size: 25px;
+}
+
+#contMenu nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+#contMenu nav ul li:hover > a {
+    text-decoration: underline;
+}
+
+#contMenu nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: rgb(101, 126, 93);
+    padding: 0;
+    list-style: none;
+    width: 150px;
+}
+
+#contMenu nav ul ul li {
+    display: block;
+    font-size: 20px;
+}
+
+#contMenu nav ul ul li a {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+#contMenu nav ul li:hover ul {
+    display: block;
+}
+
+#gridCont{
+    display: grid;
+    width: 100%;
+    height: 200px;
+    grid-template-columns:  1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+
+    grid-template-areas:
+        'texto texto'
+        'foto1 foto2'
+        'foto3 foto4';
+        
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+#texto{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    grid-area: texto;
+}
+
+#fauna{
+    width: 100%;
+    height: 50%;
+}
+
+#faunaFoto{
+    grid-area: foto1;
+}
+
+.fauna{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 90, 69);
+
+    transition: width 0s, height 0s;
+}
+
+
+#fauna1{
+    grid-area: foto2;
+
+}
+#fauna2{
+    grid-area: foto3;
+}
+#fauna3{
+    grid-area: foto4;
+}
+
+
+.fauna1{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 90, 69);
+
+
+    transition: width 0s, height 0s;
+}
+
+
+
+#foto1{
+    width: 50%;
+    height: 90%;
+    padding-left: 1%;
+
+}
+
+#foto1:hover{
+    background-color: rgb(119, 164, 140);
+    display: none;
+}
+
+#foto2{
+    width: 50%;
+    height: 90%;
+    padding-left: 1%;
+
+}
+
+#foto2:hover{
+    background-color: rgb(119, 164, 140);
+    display: none;
+}
+
+#foto3{
+    width: 50%;
+    height: 90%;
+    padding-left: 1%;
+
+}
+
+#foto3:hover{
+    background-color: rgb(119, 164, 140);
+    display: none;
+}
+
+#foto4{
+    width: 50%;
+    height: 90%;
+    padding-left: 1%;
+
+}
+
+#foto4:hover{
+    background-color: rgb(119, 164, 140);
+    display: none;
+
+}
+
+
+
+
+
+
+
