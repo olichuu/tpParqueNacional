@@ -113,7 +113,7 @@ body{
     max-width: 800px;
     margin: 20px auto;
     padding: 40px;
-    background-color: rgb(74, 90, 69);
+    background-color: rgb(74, 90, 68);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -153,6 +153,7 @@ body{
 #imagen {
     grid-column: 1; 
     max-width: 100%; 
+    height: auto;
     margin: 0;
     grid-area: imagen;
 }
