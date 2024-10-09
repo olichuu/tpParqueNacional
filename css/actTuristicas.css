@@ -101,11 +101,7 @@ body{
     display: block;
 }
 
-/* texto al lado de la imagen */
 
-
-
-/*contenedor del texto*/
 
 #grid-container{
     display: grid;
@@ -123,11 +119,10 @@ body{
 /* contenido principal */
 
 .Margen {
-    margin: 20px 10px 20px 10px; /* Orden: top, right, bottom, left */
+    margin: 20px 10px 20px 10px; 
 }
 
 
-/* texto al lado de la imagen */
 
 .container {
     display: grid;
@@ -141,6 +136,7 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .titulo {
+    text-align: center;
     font-size: 24px; 
     color: #000; 
     text-align: left; 
