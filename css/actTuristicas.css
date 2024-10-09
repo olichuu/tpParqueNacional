@@ -135,10 +135,11 @@ body{
 }
 .titulo {
     text-align: center;
-    font-size: 24px; 
+    font-size: 35px; 
     color: #ffffff;
     margin-bottom: 5px;
     grid-area: titulo;
+    font-family: "Amatic SC", sans-serif;
 }
 
 .contImg{
@@ -158,6 +159,7 @@ body{
 .info {
     grid-area: info; 
     color: #ffffff;
+    font-family: "SUSE", sans-serif;
 }
   
 
