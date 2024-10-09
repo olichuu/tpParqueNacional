@@ -86,6 +86,20 @@ body{
     display: block;
 }
 
+
+.margen { 
+    top: 80px; 
+    padding-left: 1482px;         
+    z-index: 100;   
+}
+
+.imagen-margen {
+    width: 100px;   
+    height: auto;   
+}
+  
+
+
 #gridCont{
     display: grid;
     width: 100%;
