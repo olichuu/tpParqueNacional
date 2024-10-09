@@ -124,7 +124,7 @@ body{
     width: 500px;
     height: 220px;
     position: absolute;
-    bottom: -1%;
+    bottom: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -135,14 +135,15 @@ body{
     font-size: 40px;
     margin: 5px;
     color:	rgb(255, 255, 255) ;
-    text-shadow: 2px 2px 4px rgb(101, 126, 93)
+    text-shadow: 2px 2px 4px rgb(101, 126, 93);
+    font-family: "Satisfy", cursive;
 }
 
 #contTitulo2{
     width: 400px;
     height: 220px;
     position: absolute;
-    bottom: -9%;
+    bottom: -3%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -152,7 +153,8 @@ body{
     font-size: 28px;
     margin: 5px;
     color: 	rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgb(101, 126, 93)
+    text-shadow: 2px 2px 4px rgb(101, 126, 93);
+    font-family: "Satisfy", cursive;
 }
 
 #gridCont{
@@ -245,6 +247,7 @@ body{
     color: white;
     font-size: 40px;
     text-align: center;
+    font-family: "Amatic SC", sans-serif;
 }
 
 /* Efecto hover para que la imagen se haga transparente */
@@ -293,6 +296,7 @@ body{
     color: white;
     font-size: 40px;
     text-align: center;
+    font-family: "Amatic SC", sans-serif;
 }
 
 /* Efecto hover para que la imagen se haga transparente */
@@ -326,6 +330,7 @@ body{
     height: 100%;
     color: rgb(245, 255, 242);
     grid-area: titulo3;
+    font-family: "Satisfy", cursive;
 }
 
 
@@ -383,6 +388,7 @@ iframe{
     height: 100%;
     color: rgb(245, 255, 242);
     grid-area: titulo4;
+    font-family: "Satisfy", cursive;
 }
 
 
