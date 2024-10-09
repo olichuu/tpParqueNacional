@@ -113,47 +113,214 @@ body{
     max-width: 800px;
     margin: 20px auto;
     padding: 40px;
-    background-color: rgb(74, 90, 68);
+    background-color: rgb(74, 90, 69);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #grid-container{
     display: grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-        'imagen titulo'
-        'imagen info';
+        'img1 titulo1'
+        'img1 texto1'
+        'img2 titulo2'
+        'img2 texto2'
+        'img3 titulo3'
+        'img3 texto3'
+        'img4 titulo4'
+        'img4 texto4'
+        'img5 titulo5'
+        'img5 texto5';
     height: 200px;
     grid-column-gap: 10px;
     grid-row-gap: 25px;
 }
 
-#titulo {
+.contenedores{
+    width: 75%;
+    height: auto;
+    background-color: rgb(74,90,69);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+#contImg1{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    grid-area: img1;
+    padding: 10px;
+}
+
+#img1{
+    width: 100%;
+    height: 100%;
+    grid-area: img1;
+}
+
+
+#titulo1 {
     font-size: 24px; 
     color: #000; 
     text-align: left; 
     margin-bottom: 5px;
-    grid-area: titulo;
+    grid-area: titulo1;
+    padding: 10px;
 }
 
-#info {
+#info1 {
     padding-left: 20px;
     margin-bottom: 17px;
-    grid-area: info;
+    grid-area: texto1;
+    padding: 10px;
 }
 
-#contImg {
+#titulo2 {
+    font-size: 24px; 
+    color: #000; 
+    text-align: left; 
+    margin-bottom: 5px;
+    grid-area: titulo2;
+    padding: 10px;
+}
+
+#info2 {
+    padding-left: 20px;
+    margin-bottom: 17px;
+    grid-area: texto2;
+    padding: 10px;
+}
+
+#titulo3 {
+    font-size: 24px; 
+    color: #000; 
+    text-align: left; 
+    margin-bottom: 5px;
+    grid-area: titulo3;
+    padding: 10px;
+}
+
+#info3 {
+    padding-left: 20px;
+    margin-bottom: 17px;
+    grid-area: texto3;
+    padding: 10px;
+}
+
+#titulo4 {
+    font-size: 24px; 
+    color: #000; 
+    text-align: left; 
+    margin-bottom: 5px;
+    grid-area: titulo4;
+    padding: 10px;
+}
+
+#info4 {
+    padding-left: 20px;
+    margin-bottom: 17px;
+    grid-area: texto4;
+    padding: 10px;
+}
+
+#titulo5 {
+    font-size: 24px; 
+    color: #000; 
+    text-align: left; 
+    margin-bottom: 5px;
+    grid-area: titulo5;
+    padding: 10px;
+}
+
+#info5 {
+    padding-left: 20px;
+    margin-bottom: 17px;
+    grid-area: texto5;
+    padding: 10px;
+}
+
+
+#contImg1 {
     grid-column: 1; 
-    max-width: 100%; 
+    max-width: 30%; 
     margin: 0;
-    grid-area: imagen;
+    grid-area: img1;
+    padding: 10px;
 }
 
-#imagen {
+#imagen1 {
     grid-column: 1; 
     max-width: 100%; 
     height: auto;
     margin: 0;
-    grid-area: imagen;
+    grid-area: img1;
+}
+
+#contImg2 {
+    grid-column: 1; 
+    max-width: 30%; 
+    margin: 0;
+    grid-area: img2;
+    padding: 10px;
+}
+
+#imagen2 {
+    grid-column: 1; 
+    max-width: 100%; 
+    height: auto;
+    margin: 0;
+    grid-area: img2;
+}
+
+#contImg3 {
+    grid-column: 1; 
+    max-width: 30%; 
+    margin: 0;
+    grid-area: img3;
+    padding: 10px;
+}
+
+#imagen3 {
+    grid-column: 1; 
+    max-width: 100%; 
+    height: auto;
+    margin: 0;
+    grid-area: img3;
+}
+
+#contImg4 {
+    grid-column: 1; 
+    width: 80px; 
+    margin: 0;
+    grid-area: img4;
+    padding: 10px;
+}
+
+#imagen4 {
+    grid-column: 1; 
+    width: 80px; 
+    height: auto;
+    margin: 0;
+    grid-area: img4;
+}
+
+#contImg5 {
+    grid-column: 1; 
+    max-width: 30%; 
+    margin: 0;
+    grid-area: img5;
+    padding: 10px;
+}
+
+#imagen5 {
+    grid-column: 1; 
+    max-width: 100%; 
+    height: auto;
+    margin: 0;
+    grid-area: img5;
 }
