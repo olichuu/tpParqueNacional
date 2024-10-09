@@ -127,22 +127,20 @@ body{
     grid-row-gap: 25px;
 }
 
-.contenedores{
-    border: solid 20px;
-    border-color: rgb(204, 224, 198); 
-    width: 100%;
+.contenedores {
+    width: 80%; /* Ajusta el tamaño según sea necesario */
     height: auto;
     background-color: rgb(74,90,69);
     display: flex;
-    justify-self: center;
-    padding: 10% 20% 10% 20%;
-
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    margin: 50px auto;          /* Esto ayuda a centrar el contenedor en el cuerpo de la página */
 }
 
 
 #contImg1{
-    width: 160%;
-    height: 300px;
+    width: 100%;
+    height: 270px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -157,7 +155,11 @@ body{
 }
 
 #contTitulo1{
-
+    width: 100%;
+    height: px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
 
 }
 
