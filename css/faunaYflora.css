@@ -102,39 +102,12 @@ body{
     grid-row-gap: 10px;
 }
 
-#texto{
-    display: flex;
-    width: 100%;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
-    grid-area: texto;
-}
-
-#fauna{
-    width: 100%;
-    height: 50%;
-}
-
 #faunaFoto{
     grid-area: foto1;
 }
 
-.fauna{
-    display: flex;
-    width: 100%;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(74, 90, 69);
-
-    transition: width 0s, height 0s;
-}
-
-
 #fauna1{
     grid-area: foto2;
-
 }
 #fauna2{
     grid-area: foto3;
@@ -143,6 +116,37 @@ body{
     grid-area: foto4;
 }
 
+#texto{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    grid-area: texto;
+    color: white;
+}
+
+#fauna{
+    width: 100%;
+    height: 50%;
+}
+
+
+.fauna{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 5%;
+    background-color: rgb(204, 224, 198);
+    box-sizing: border-box;
+
+    transition: width 0s, height 0s;
+}
+
+
 
 .fauna1{
     display: flex;
@@ -150,7 +154,10 @@ body{
     height: 500px;
     justify-content: center;
     align-items: center;
-    background-color: rgb(74, 90, 69);
+    padding-right: 10%;
+    padding-left: 5%;
+    box-sizing: border-box;
+    background-color:  rgb(204, 224, 198);
 
 
     transition: width 0s, height 0s;
@@ -159,21 +166,24 @@ body{
 
 
 #foto1{
-    width: 50%;
+    width: 100%;
     height: 90%;
-    padding-left: 1%;
+
 
 }
 
 #foto1:hover{
+    width: 100%;
+    height: 500px;
     background-color: rgb(119, 164, 140);
     display: none;
+
 }
 
 #foto2{
-    width: 50%;
+    width: 100%;
     height: 90%;
-    padding-left: 1%;
+    
 
 }
 
@@ -183,9 +193,9 @@ body{
 }
 
 #foto3{
-    width: 50%;
+    width: 100%;
     height: 90%;
-    padding-left: 1%;
+    
 
 }
 
@@ -195,9 +205,9 @@ body{
 }
 
 #foto4{
-    width: 50%;
+    width: 100%;
     height: 90%;
-    padding-left: 1%;
+
 
 }
 
