@@ -126,13 +126,9 @@ body{
     color: white;
 }
 
-#fauna{
-    width: 100%;
-    height: 50%;
-}
-
-
-.fauna{
+/* Contenedor de la imagen y el texto */
+.fauna {
+    position: relative; /* Importante para que el texto se pueda posicionar sobre la imagen */
     display: flex;
     width: 100%;
     height: 500px;
@@ -142,13 +138,11 @@ body{
     padding-right: 5%;
     background-color: rgb(204, 224, 198);
     box-sizing: border-box;
-
-    transition: width 0s, height 0s;
+    transition: 0.3s ease-in-out;
 }
 
-
-
-.fauna1{
+.fauna1 {
+    position: relative;
     display: flex;
     width: 100%;
     height: 500px;
@@ -156,70 +150,142 @@ body{
     align-items: center;
     padding-right: 10%;
     padding-left: 5%;
+    background-color: rgb(204, 224, 198);
     box-sizing: border-box;
-    background-color:  rgb(204, 224, 198);
-
-
-    transition: width 0s, height 0s;
+    transition: 0.3s ease-in-out;
 }
 
-
-
-#foto1{
+/* Imagen */
+img {
     width: 100%;
     height: 90%;
-
-
+    transition: opacity 0.3s ease-in-out;
+}
+.fauna:hover img,
+.fauna1:hover img {
+    opacity: 0; 
 }
 
-#foto1:hover{
+
+.texto-hover {
+    width: 90%;
+    height: 480px;
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 29px;
+    text-align: center;
+    font-family: "SUSE", sans-serif;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(119, 164, 140);
+    color: white;
+    padding: 40px;
+    padding-top: 60px;
+    text-align: center;
+    display: none;
+}
+
+.fauna:hover .texto-hover,
+.fauna1:hover .texto-hover {
+    display: block; 
+}
+
+
+
+#gridCont2{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;  
+    grid-template-areas:
+        'texto texto'   
+        'foto10 foto20' 
+        'foto30 foto40'; 
+        
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+#texto1{
+    grid-area: texto;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+#floraFoto{
+    grid-area: foto10;
+}
+
+#floraFoto1{
+    grid-area: foto20;
+}
+
+#floraFoto2{
+    grid-area: foto30;
+}
+
+#floraFoto3{
+    grid-area: foto40;
+}
+
+
+.flora, .flora1 {
+    position: relative;
+    display: flex;
     width: 100%;
     height: 500px;
-    background-color: rgb(119, 164, 140);
-    display: none;
-
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 224, 198);
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
 }
 
-#foto2{
+img {
     width: 100%;
     height: 90%;
-    
-
+    transition: opacity 0.3s ease-in-out;
 }
 
-#foto2:hover{
+.flora:hover img, .flora1:hover img {
+    opacity: 0;
+}
+
+.texto-hover2 {
+    width: 90%;
+    height: 480px;
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 29px;
+    text-align: center;
+    font-family: "SUSE", sans-serif;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: rgb(119, 164, 140);
-    display: none;
-}
-
-#foto3{
-    width: 100%;
-    height: 90%;
-    
-
-}
-
-#foto3:hover{
-    background-color: rgb(119, 164, 140);
-    display: none;
-}
-
-#foto4{
-    width: 100%;
-    height: 90%;
-
-
-}
-
-#foto4:hover{
-    background-color: rgb(119, 164, 140);
+    color: white;
+    padding: 40px;
+    padding-top: 60px;
+    text-align: center;
     display: none;
 
 }
 
-
-
-
-
-
-
+.flora:hover .texto-hover2, .flora1:hover .texto-hover2 {
+    display: block;
+}
