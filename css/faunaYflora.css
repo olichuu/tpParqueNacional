@@ -310,5 +310,174 @@ img {
 }
 
 @media screen and (min-width: 320px) and (max-width:767px ){
+    body{
+        background-color: 	rgb(204, 224, 198);
+    }
     
+    #contMenu {
+        width: 100%;
+        height: 20px;
+        background-color: rgb(101, 126, 93);
+        display: flex;
+        align-items: center;
+        padding: 0; 
+    }
+    
+    
+    #contLogo {
+        padding: 0px 0px 0px 10px;
+        margin: 0; 
+        width: 20px;
+        height: 15px;
+    }
+    
+    #logo{
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+    #contMenu nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center; 
+    }
+    
+    #contMenu nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    
+    #contMenu nav ul li {
+        position: relative;
+        font-size: 8px;
+    }
+    
+    #contMenu nav ul li a {
+        display: block;
+        padding: 5px 15px;
+        color: white;
+        text-decoration: none;
+    
+    }
+    
+    #contMenu nav ul li:hover > a {
+        text-decoration: underline;
+    }
+    
+    #contMenu nav ul ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        background-color: rgb(101, 126, 93);
+        padding: 0;
+        list-style: none;
+        width: 85px;
+    }
+    
+    #contMenu nav ul ul li {
+        display: block;
+        font-size: 8px;
+    }
+    
+    #contMenu nav ul ul li a {
+        padding: 8px;
+        white-space: nowrap;
+    }
+    
+    #contMenu nav ul li:hover ul {
+        display: block;
+    }
+    
+    #gridCont{
+        display: grid;
+        width: 100%;
+        height: 1000px;
+        grid-template-columns:  1fr  ;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'texto'
+            'foto1'
+            'foto2'
+            'foto3' 
+            'foto4';
+            
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    #texto{
+        font-size: 15px;
+        text-align: 20px;
+    }
+
+    .fauna {
+        width: 100%;
+        height: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .fauna1 {
+        width: 100%;
+        height: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .texto-hover {
+        width: 90%;
+        height: 230px;
+        font-size: 10px;
+    }
+
+    #gridCont2{
+        display: grid;
+        width: 100%;
+        height: 1050px;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;  
+        grid-template-areas:
+            'texto1' 
+            'texto1'   
+            'foto10'
+            'foto20' 
+            'foto30' 
+            'foto40'; 
+            
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+        padding-top: 20%;
+    }
+
+
+    #texto1{
+        font-size: 15px;
+        text-align: 20px;
+    }
+    
+    .flora{
+        width: 100%;
+        height: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .flora1{
+        width: 100%;
+        height: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .texto-hover2 {
+        width: 90%;
+        height:230px;
+        font-size: 10px;
+    }
+    
+
 }
