@@ -614,7 +614,7 @@ footer ul li a:hover {
         width: 170px;
         height: 220px;
         position: absolute;
-        top: 18%;
+        top: 21%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -631,7 +631,7 @@ footer ul li a:hover {
         width: 100%;
         height: 100px;
         position: absolute;
-        bottom: 70%;
+        bottom: 66%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -639,7 +639,7 @@ footer ul li a:hover {
     }
     
     #titulo1{
-        font-size: 15px;
+        font-size: 12px;
         margin: 5px;
         color:	rgb(255, 255, 255) ;
         text-shadow: 2px 2px 4px rgb(101, 126, 93)
@@ -649,7 +649,7 @@ footer ul li a:hover {
         width: 100%;
         height: 100px;
         position: absolute;
-        bottom: 67%;
+        bottom: 63%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -688,7 +688,7 @@ footer ul li a:hover {
         border: solid 10px;
         border-color: rgb(204, 224, 198);
         width: 100%;
-        height: 90px;
+        height: 200px;
         background-color: 	rgb(119, 164, 140);
         display: flex;
         align-items: center;
@@ -699,7 +699,7 @@ footer ul li a:hover {
     #texto1{
         padding: 0px 15px 0px 15px;
         text-align: justify;
-        font-size: 6px;
+        font-size: 11px;
         line-height: 195%;
         color: 	rgb(245, 255, 242);
         grid-area: texto1;
@@ -813,13 +813,13 @@ footer ul li a:hover {
     
     #contUbi{
         width: 100%;
-        height: 400px;
+        height: 700px;
         background-color: rgb(119, 164, 140);
     }
     
     #contTitulo3{
         width: 100%;
-        height: 50px;
+        height: 65px;
         display: flex;
         align-items: center;
         justify-content: left;
@@ -827,7 +827,7 @@ footer ul li a:hover {
     }
     
     #titulo3{
-        font-size: 15px;
+        font-size: 20px;
         padding: 25px 10px 10px 20px;
         width: 100%;
         height: 100%;
@@ -838,7 +838,7 @@ footer ul li a:hover {
     
     #contTexto2{
         width: 100%;
-        height: 20px;
+        height: 35px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -848,7 +848,7 @@ footer ul li a:hover {
     #texto2{
         padding: 0px 15px 0px 20px;
         text-align: justify;
-        font-size: 6px;
+        font-size: 11px;
         line-height: 195%;
         color: 	rgb(245, 255, 242);
         grid-area: texto2;
@@ -857,7 +857,7 @@ footer ul li a:hover {
     
     #contMapa{
         width: 100%;
-        height: 240px;
+        height: 400px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -865,7 +865,7 @@ footer ul li a:hover {
     }
     
     iframe{
-        padding: 40px 15px 20px 15px;
+        padding: 135px 15px 20px 15px;
         width: 100%;
         height: 100%;
         grid-area: mapa;
@@ -873,7 +873,7 @@ footer ul li a:hover {
     
     #contTitulo4{
         width: 100%;
-        height: 20px;
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: left;
@@ -881,7 +881,7 @@ footer ul li a:hover {
     }
     
     #titulo4{
-        font-size: 15px;
+        font-size: 20px;
         padding: 0px 10px 10px 20px;
         width: 100%;
         height: 100%;
@@ -902,7 +902,7 @@ footer ul li a:hover {
     #texto3{
         padding: 5px 15px 0px 20px;
         text-align: justify;
-        font-size: 6px;
+        font-size: 11px;
         line-height: 195%;
         color: 	rgb(245, 255, 242);
         grid-area: texto3;
@@ -928,7 +928,7 @@ footer ul li a:hover {
     }
     
     footer ul {
-        font-size: 7px;
+        font-size: 9px;
         list-style: none;
         padding: 0;
         margin: 0;
