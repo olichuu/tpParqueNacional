@@ -101,232 +101,57 @@ body{
     display: block;
 }
 
-/* texto al lado de la imagen */
 
-
-
-/*contenedor del texto*/
 
 #grid-container{
     display: grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
     grid-template-areas: 
-        'img1 titulo1'
-        'img1 texto1'
-        'img2 titulo2'
-        'img2 texto2'
-        'img3 titulo3'
-        'img3 texto3'
-        'img4 titulo4'
-        'img4 texto4'
-        'img5 titulo5'
-        'img5 texto5';
-    height: 200px;
+        'imagen titulo'
+        'imagen info';
+    height: 800px;
     grid-column-gap: 10px;
     grid-row-gap: 25px;
 }
 
-.contenedores {
-    width: 80%; /* Ajusta el tamaño según sea necesario */
-    height: auto;
-    background-color: rgb(74,90,69);
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
-    margin: 50px auto;          /* Esto ayuda a centrar el contenedor en el cuerpo de la página */
+
+/* contenido principal */
+
+.Margen {
+    margin: 20px 10px 20px 10px; 
 }
 
 
-#contImg1{
-    width: 100%;
-    height: 270px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    grid-area: img1;
 
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: 	rgb(119, 164, 140);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-#img1{
-    width: 100%;
-    height: 100%;
-    grid-area: img1;
-}
-
-#contTitulo1{
-    width: 100%;
-    height: px;
-    display: flex;
-    align-items: top;
-    justify-content: center;
-
-}
-
-#titulo1 {
+.titulo {
+    text-align: center;
     font-size: 24px; 
     color: #000; 
     text-align: left; 
     margin-bottom: 5px;
-    grid-area: titulo1;
-    padding: 10px;
+    grid-area: titulo; 
 }
 
-#contInfo1{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-
-}
-
-#info1 {
-    padding-left: 20px;
-    margin-bottom: 17px;
-    grid-area: texto1;
-    padding: 10px;
-}
-
-#titulo2 {
-    font-size: 24px; 
-    color: #000; 
-    text-align: left; 
-    margin-bottom: 5px;
-    grid-area: titulo2;
-    padding: 10px;
-}
-
-#info2 {
-    padding-left: 20px;
-    margin-bottom: 17px;
-    grid-area: texto2;
-    padding: 10px;
-}
-
-#titulo3 {
-    font-size: 24px; 
-    color: #000; 
-    text-align: left; 
-    margin-bottom: 5px;
-    grid-area: titulo3;
-    padding: 10px;
-}
-
-#info3 {
-    padding-left: 20px;
-    margin-bottom: 17px;
-    grid-area: texto3;
-    padding: 10px;
-}
-
-#titulo4 {
-    font-size: 24px; 
-    color: #000; 
-    text-align: left; 
-    margin-bottom: 5px;
-    grid-area: titulo4;
-    padding: 10px;
-}
-
-#info4 {
-    padding-left: 20px;
-    margin-bottom: 17px;
-    grid-area: texto4;
-    padding: 10px;
-}
-
-#titulo5 {
-    font-size: 24px; 
-    color: #000; 
-    text-align: left; 
-    margin-bottom: 5px;
-    grid-area: titulo5;
-    padding: 10px;
-}
-
-#info5 {
-    padding-left: 20px;
-    margin-bottom: 17px;
-    grid-area: texto5;
-    padding: 10px;
-}
-
-
-#contImg1 {
-    grid-column: 1; 
-    max-width: 30%; 
+  
+.imagen {
+    grid-area: imagen; 
+    max-width: 50%; 
     margin: 0;
-    grid-area: img1;
-    padding: 10px;
 }
 
-#imagen1 {
-    grid-column: 1; 
-    max-width: 100%; 
-    height: auto;
-    margin: 0;
-    grid-area: img1;
+.info {
+    grid-area: info; 
 }
-
-#contImg2 {
-    grid-column: 1; 
-    max-width: 30%; 
-    margin: 0;
-    grid-area: img2;
-    padding: 10px;
-}
-
-#imagen2 {
-    grid-column: 1; 
-    max-width: 100%; 
-    height: auto;
-    margin: 0;
-    grid-area: img2;
-}
-
-#contImg3 {
-    grid-column: 1; 
-    max-width: 30%; 
-    margin: 0;
-    grid-area: img3;
-    padding: 10px;
-}
-
-#imagen3 {
-    grid-column: 1; 
-    max-width: 100%; 
-    height: auto;
-    margin: 0;
-    grid-area: img3;
-}
-
-#contImg4 {
-    grid-column: 1; 
-    width: 80px; 
-    margin: 0;
-    grid-area: img4;
-    padding: 10px;
-}
-
-#imagen4 {
-    grid-column: 1; 
-    width: 80px; 
-    height: auto;
-    margin: 0;
-    grid-area: img4;
-}
-
-#contImg5 {
-    grid-column: 1; 
-    max-width: 30%; 
-    margin: 0;
-    grid-area: img5;
-    padding: 10px;
-}
-
-#imagen5 {
-    grid-column: 1; 
-    max-width: 100%; 
-    height: auto;
-    margin: 0;
-    grid-area: img5;
-}
+  
