@@ -89,9 +89,9 @@ body{
 #gridCont{
     display: grid;
     width: 100%;
-    height: 200px;
+    height: 1500px;
     grid-template-columns:  1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-rows: 0.5fr 1fr 1fr ;
 
     grid-template-areas:
         'texto texto'
@@ -101,6 +101,17 @@ body{
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
+
+#texto{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-area: texto;
+    color: white;
+}
+
 
 #faunaFoto{
     grid-area: foto1;
@@ -116,15 +127,6 @@ body{
     grid-area: foto4;
 }
 
-#texto{
-    display: flex;
-    width: 100%;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
-    grid-area: texto;
-    color: white;
-}
 
 /* Contenedor de la imagen y el texto */
 .fauna {
@@ -200,11 +202,11 @@ img {
 #gridCont2{
     display: grid;
     width: 100%;
-    height: auto;
+    height: 1100px;
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto auto;  
+    grid-template-rows: 0.5fr 1fr 1fr;  
     grid-template-areas:
-        'texto texto'   
+        'texto1 texto1'   
         'foto10 foto20' 
         'foto30 foto40'; 
         
@@ -213,10 +215,11 @@ img {
 }
 
 #texto1{
-    grid-area: texto;
+    padding-top: 5%;
+    grid-area: texto1;
+    font-size: 20px;
     display: flex;
-    width: 100%;
-    height: 300px;
+    text-align: 20px;
     align-items: center;
     justify-content: center;
     color: white;
@@ -240,13 +243,29 @@ img {
 }
 
 
-.flora, .flora1 {
+.flora{
+    position: relative; 
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 5%;
+    background-color: rgb(204, 224, 198);
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+}
+
+.flora1{
     position: relative;
     display: flex;
     width: 100%;
     height: 500px;
     justify-content: center;
     align-items: center;
+    padding-right: 10%;
+    padding-left: 5%;
     background-color: rgb(204, 224, 198);
     box-sizing: border-box;
     transition: 0.3s ease-in-out;
@@ -264,7 +283,7 @@ img {
 
 .texto-hover2 {
     width: 90%;
-    height: 480px;
+    height:480px;
     box-sizing: border-box;
     position: absolute;
     display: block;
@@ -288,4 +307,8 @@ img {
 
 .flora:hover .texto-hover2, .flora1:hover .texto-hover2 {
     display: block;
+}
+
+@media screen and (min-width: 320px) and (max-width:767px ){
+    
 }
