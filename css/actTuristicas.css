@@ -106,17 +106,7 @@ body{
 
 
 /*contenedor del texto*/
-#container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 40px;
-    background-color: rgb(74, 90, 69);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+
 #grid-container{
     display: grid;
     grid-template-columns:1fr 1fr;
@@ -138,23 +128,26 @@ body{
 }
 
 .contenedores{
-    width: 75%;
+    border: solid 20px;
+    border-color: rgb(204, 224, 198); 
+    width: 100%;
     height: auto;
     background-color: rgb(74,90,69);
     display: flex;
-    justify-content: center;
-    padding: 10px;
+    justify-self: center;
+    padding: 10% 20% 10% 20%;
+
 }
 
 
 #contImg1{
-    width: 50%;
+    width: 160%;
     height: 300px;
     display: flex;
     justify-content: left;
     align-items: center;
     grid-area: img1;
-    padding: 10px;
+
 }
 
 #img1{
@@ -163,6 +156,10 @@ body{
     grid-area: img1;
 }
 
+#contTitulo1{
+
+
+}
 
 #titulo1 {
     font-size: 24px; 
@@ -171,6 +168,13 @@ body{
     margin-bottom: 5px;
     grid-area: titulo1;
     padding: 10px;
+}
+
+#contInfo1{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
 }
 
 #info1 {
